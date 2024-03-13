@@ -1,0 +1,36 @@
+<!--    Programmierprojekt Forum, 06.03.2024
+        Luca Flühler, Lucien Ruffet, Sandro Kuster
+        Beschreibung: Hauptseite des Forums         -->
+
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <script type="text/javascript" src="/frontend/constants.js"></script>
+</head>
+
+
+<body>
+    <h1>Forum</h1>
+    <div id="authButtons">
+        <a href="/frontend/pages/login.html">Anmelden</a>
+        <a href="/frontend/pages/signup.html">Registrieren</a>
+    </div>
+    <div id="loggedInUser" style="display: none;">
+        Eingeloggt als <span id="username"></span> (<span id="email"></span>)
+        <button id="logoutButton" type="button">Abmelden</button>
+    </div>
+    <hr>
+    <a href="/frontend/pages/createPost.html">Erstelle einen Post!</a>
+    <p align="center">Aktuelle Posts</p>
+    <hr>
+    <div id="postList">
+        <!-- Liste von Posts -->
+    </div>
+</body>
+
+<script type="text/javascript" src="/frontend/main.js"></script>
+</html>
